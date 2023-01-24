@@ -1,0 +1,1772 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en_GB">
+
+  
+  
+<!-- Mirrored from data.gov.sg/dataset/listing-of-registered-contractors by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Jan 2023 04:48:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!--[if lte ie 8]><script type="text/javascript" src="/fanstatic/vendor/:version:2020-12-29T10:24:02/html5.min.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="https://data.gov.sg/fanstatic/vendor/:version:2020-12-29T10:24:02/select2/select2.css" />
+<link rel="stylesheet" type="text/css" href="https://data.gov.sg/fanstatic/datagovsg-css/:version:2023-01-16T16:56:33.75/datagovsg.min.css" />
+<link rel="stylesheet" type="text/css" href="https://data.gov.sg/fanstatic/datagovsg-css/:version:2023-01-16T16:56:33.75/package/read.min.css" />
+<link rel="stylesheet" type="text/css" href="https://data.gov.sg/fanstatic/datagovsg-css/:version:2023-01-16T16:56:33.75/package/snippets/resource_item_fields.min.css" />
+
+
+    <title>
+      Listing of Registered Contractors-Data.gov.sg
+      
+    </title>
+
+    
+    <meta charset="utf-8">
+    <meta name="generator" content="ckan ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no">
+    <meta name="description" content="This dataset contains the list of contractors registered in BCA Contractor Registration System (CRS). The BCA Contractors Registration System (CRS) serves the construction and construction-related procurement needs of the public sector including government ministries and statutory boards.">
+    <meta name="theme-color" content="#113355">
+    <meta name="application-name" content="Data.gov.sg">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@datagovsg">
+    <meta name="twitter:title" content="Listing of Registered Contractors-Data.gov.sg
+      ">
+    <meta name="twitter:description" content="This dataset contains the list of contractors registered in BCA Contractor Registration System (CRS). The BCA Contractors Registration System (CRS) serves the construction and construction-related procurement needs of the public sector including government ministries and statutory boards.">
+    <meta name="twitter:url" content="https://data.gov.sg/dataset/listing-of-registered-contractors">
+    <meta name="twitter:image:src" content="https://data.gov.sg/images/thumbnail.png">
+    
+    <meta property="og:title" content="Listing of Registered Contractors-Data.gov.sg
+      " />
+    <meta property="og:description" content="This dataset contains the list of contractors registered in BCA Contractor Registration System (CRS). The BCA Contractors Registration System (CRS) serves the construction and construction-related procurement needs of the public sector including government ministries and statutory boards." />
+    <meta property="og:type" content="article" >
+    <meta property="og:url" content="https://data.gov.sg/dataset/listing-of-registered-contractors" >
+    <meta property="og:image" content="https://data.gov.sg/images/thumbnail.png" >
+    <meta property="og:site_name" content="Data.gov.sg" >
+    
+    <meta name="apple-mobile-web-app-title" content="Data.gov.sg">
+    
+    <meta name="msapplication-TileColor" content="#113355">
+    <meta name="msapplication-TileImage" content="https://data.gov.sg/dataset/images/favicons/mstile-144x144.png">
+    
+
+    
+    <link rel="manifest" href="https://data.gov.sg/manifest.json">
+    
+    <link rel="mask-icon" href="https://data.gov.sg/images/favicons/safari-pinned-tab.svg" color="#223344">
+    
+    <link rel="shortcut icon" href="https://data.gov.sg/images/favicon.ico" >
+    <link rel="icon" type="image/png" href="https://data.gov.sg/images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://data.gov.sg/images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://data.gov.sg/images/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://data.gov.sg/images/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="https://data.gov.sg/images/favicons/favicon-194x194.png" sizes="194x194">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="https://data.gov.sg/images/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://data.gov.sg/images/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://data.gov.sg/images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://data.gov.sg/images/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://data.gov.sg/images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://data.gov.sg/images/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://data.gov.sg/images/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://data.gov.sg/images/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://data.gov.sg/images/favicons/apple-touch-icon-180x180.png">
+    
+
+    
+
+      
+    
+
+
+
+    
+    
+    
+    
+    
+    <script>
+      // Check if script is being ran from Iframe within data.gov.sg.
+      // This prevents dobule counting in Google Analytics tracking when page views are
+      // triggered twice due to embedding of iframe. This allows us to continue tracking
+      // users who are properly embedding the charts.
+      nodeName = window.frameElement ? window.frameElement.nodeName : 'default'
+      if (!(window.location.hostname.indexOf("data.gov.sg") > -1 && nodeName == "IFRAME")) {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-64941664-1', 'auto');
+        ga('send', 'pageview');
+
+        window.onload = function () {
+          //track resource downloads
+          document.body.addEventListener('click', function(event) {
+            var element = findElWithClass(event);
+            if (element !== null && typeof element.className == "string"){
+              var classes = element.className.split(' ');
+              for (var event_type in ga_events) {
+                if (classes.indexOf(event_type) > -1 ) {
+                  var eventCategory = ga_events[event_type].eventCategory;
+                  var eventAction = ga_events[event_type].eventAction;
+                  var eventLabel = element.getAttribute("data-ga") + ": " + window.location.href;
+
+                  if (event_type == "ga-dataset-download") {
+                    eventLabel = element.getAttribute("data-ga");
+                  }
+                  ga('send', 'event', eventCategory, eventAction, eventLabel);
+                }
+              }
+            }
+          });
+        };
+      }
+
+      function findElWithClass(el) {
+        if (el.target) {
+          el = el.target;
+          while (el) {
+            if (typeof el.className == "string"){
+              var classes = el.className.split(' ');
+              for (var event_type in ga_events) {
+                if (classes.indexOf(event_type) > -1 ) {
+                  return el;
+                }
+              }
+            }
+            el = el.parentNode;
+          }
+          return null;
+        }
+      }
+    </script>
+    
+    
+
+  </head>
+  
+
+  
+  <body>
+
+    
+    
+    <nav class="site-nav">
+      <div class="container">
+        <a href="https://data.gov.sg/">
+          <img class="site-logo"
+               src="https://data.gov.sg/images/logo.svg"
+               alt="Data.gov.sg"
+               title="Data.gov.sg"/>
+        </a>
+        <a href="https://data.gov.sg/" class="site-title">Data.gov.sg</a>
+        <div class="flex-spacer"></div>
+
+        
+        <a class="site-link ga-nav-topic-dropdown" data-toggle="collapse" href="https://data.gov.sg/dataset/.topic-collapse">Topics<span class="caret"></span></a>
+        
+
+
+        <a class="site-link ga-nav-blog" href='https://blog.data.gov.sg/'>Blog</a>
+        <a class="site-link ga-nav-developers" href='https://data.gov.sg/developer'>Developers</a>
+        <a class="site-link ga-nav-request" href='https://github.com/datagovsg/datagovsg-datasets/issues/new?title=Dataset%20request:%20%3Cdataset%20title%3E'>Data Request</a>
+
+      </div>
+    </nav>
+    
+
+    
+    <div class="collapse topic-collapse">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Economy
+               href="https://data.gov.sg/group/economy">
+              <img class="hover-on" src=https://data.gov.sg/images/group_icons/active/economy.svg>
+              <img class="hover-off" src=https://data.gov.sg/images/group_icons/inactive/economy.svg>
+              <h5 class="topic-title"><small>Economy</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Education
+               href="https://data.gov.sg/group/education">
+              <img class="hover-on" src=https://data.gov.sg/images/group_icons/active/education.svg>
+              <img class="hover-off" src=https://data.gov.sg/images/group_icons/inactive/education.svg>
+              <h5 class="topic-title"><small>Education</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Environment
+               href="https://data.gov.sg/group/environment">
+              <img class="hover-on" src=https://data.gov.sg/images/group_icons/active/environment.svg>
+              <img class="hover-off" src=https://data.gov.sg/images/group_icons/inactive/environment.svg>
+              <h5 class="topic-title"><small>Environment</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Finance
+               href="https://data.gov.sg/group/finance">
+              <img class="hover-on" src=https://data.gov.sg/images/group_icons/active/finance.svg>
+              <img class="hover-off" src=https://data.gov.sg/images/group_icons/inactive/finance.svg>
+              <h5 class="topic-title"><small>Finance</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Health
+               href="https://data.gov.sg/group/health">
+              <img class="hover-on" src=https://data.gov.sg/images/group_icons/active/health.svg>
+              <img class="hover-off" src=https://data.gov.sg/images/group_icons/inactive/health.svg>
+              <h5 class="topic-title"><small>Health</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Infrastructure
+               href="https://data.gov.sg/group/infrastructure">
+              <img class="hover-on" src=https://data.gov.sg/images/group_icons/active/infrastructure.svg>
+              <img class="hover-off" src=https://data.gov.sg/images/group_icons/inactive/infrastructure.svg>
+              <h5 class="topic-title"><small>Infrastructure</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Society
+               href="https://data.gov.sg/group/society">
+              <img class="hover-on" src=https://data.gov.sg/images/group_icons/active/society.svg>
+              <img class="hover-off" src=https://data.gov.sg/images/group_icons/inactive/society.svg>
+              <h5 class="topic-title"><small>Society</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Technology
+               href="https://data.gov.sg/group/technology">
+              <img class="hover-on" src=https://data.gov.sg/images/group_icons/active/technology.svg>
+              <img class="hover-off" src=https://data.gov.sg/images/group_icons/inactive/technology.svg>
+              <h5 class="topic-title"><small>Technology</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Transport
+               href="https://data.gov.sg/group/transport">
+              <img class="hover-on" src=https://data.gov.sg/images/group_icons/active/transport.svg>
+              <img class="hover-off" src=https://data.gov.sg/images/group_icons/inactive/transport.svg>
+              <h5 class="topic-title"><small>Transport</small></h5>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+    <header class="site-header "
+            style="background-image: url()">
+      
+      
+      
+      
+    </header>
+    
+
+
+    
+    
+    <main class="site-main">
+      
+
+<div class="header-div">
+  <div class="container">
+    <div class="package-title-section">
+      <h2 class="package-title">Listing of Registered Contractors</h2>
+      <div class="package-title-buttons">
+      
+      
+        <a class="btn datagovsg-btn btn-right btn-orange ga-dataset-download"
+          data-ga="a8356cb8-8dd9-4436-a259-a9a3aa87f5c6"
+           role="button"
+           href="https://data.gov.sg/dataset/a8356cb8-8dd9-4436-a259-a9a3aa87f5c6/download">
+           <img class="button-icon" src='https://data.gov.sg/images/icons/Download.svg'/>
+           Download
+        </a>
+      
+
+      
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dataset-resource-views">
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+<div class="resource-views-header">
+    <div class="resource-selector-header">
+      FILES IN THIS DATASET
+    </div>
+</div>
+
+<div class="resource-views-body">
+
+  
+  
+
+  <div class="resource-selector-container">
+    <ul class="resource-selector nav hidden-xs">
+      
+      <li class="active">
+        <a class="ga-dataset-resource-selector"
+           href="https://data.gov.sg/dataset/listing-of-registered-contractors?resource_id=a9a9327f-7634-4367-be7f-d679a729bd96">
+          Listing of Registered Contractors
+          <div>
+            <img class="format-icon"
+            src=https://data.gov.sg/images/icons/file_type/CSV.svg/>
+          </div>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+
+  <div class="resource-detail-container">
+    <div class="resource-detail container-fluid">
+
+
+        <div class="resource-controls-mobile">
+          
+          
+
+          
+          
+          Views for this resource:
+          <select class="resource-control text-center view-select" onchange="window.location.href = this.value;">
+            
+            <option 
+                    selected=true
+                    
+                    value="/dataset/listing-of-registered-contractors?view_id=bd811027-d43e-4102-abed-559ec23813f4&amp;resource_id=a9a9327f-7634-4367-be7f-d679a729bd96">
+              Table
+            </option>
+            
+            <option 
+                    value="/dataset/listing-of-registered-contractors?view_id=47925857-804d-4b0d-808c-25808b29a412&amp;resource_id=a9a9327f-7634-4367-be7f-d679a729bd96">
+              Map
+            </option>
+            
+          </select>
+          
+        </div>
+
+      
+        
+        
+        <div class="resource-controls">
+          <span>Views: </span>
+          
+            
+
+            
+
+            <a class="view-tab ga-dataset-resource-view-selector active table" data-ga=Table href=https://data.gov.sg/dataset/listing-of-registered-contractors?view_id=bd811027-d43e-4102-abed-559ec23813f4&amp;resource_id=a9a9327f-7634-4367-be7f-d679a729bd96>
+              <div></div>
+              <img class="active" src="https://data.gov.sg/images/icons/resource_view_selectors/active/table.svg"/>
+              <img class="inactive" src="https://data.gov.sg/images/icons/resource_view_selectors/inactive/table.svg"/>
+              <img class="inactive hover" src="https://data.gov.sg/images/icons/resource_view_selectors/hover/table.svg"/>
+            </a>
+          
+            
+
+            
+
+            <a class="view-tab ga-dataset-resource-view-selector  map" data-ga=Map href=https://data.gov.sg/dataset/listing-of-registered-contractors?view_id=47925857-804d-4b0d-808c-25808b29a412&amp;resource_id=a9a9327f-7634-4367-be7f-d679a729bd96>
+              <div></div>
+              <img class="inactive" src="https://data.gov.sg/images/icons/resource_view_selectors/active/map.svg"/>
+              <img class="active" src="https://data.gov.sg/images/icons/resource_view_selectors/inactive/map.svg"/>
+              <img class="inactive hover" src="https://data.gov.sg/images/icons/resource_view_selectors/hover/map.svg"/>
+            </a>
+          
+
+          <div class="resource-embed-container">
+            
+            
+
+              
+                
+                
+
+                <button class="btn datagovsg-btn btn-right btn-blue desktop-only ga-dataset-data-api"
+                  data-ga=a9a9327f-7634-4367-be7f-d679a729bd96
+                  data-toggle="modal"
+                  data-target="#dataAPIModal">
+                  <img class="button-icon" src='https://data.gov.sg/images/icons/Data_API.svg'/>Data API
+                </button>
+
+                
+                <!-- <div class="modal" id="dataAPIModal"> -->
+                
+
+<div class="modal" id="dataAPIModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">View Embedding Instructions</h4>
+      </div>
+      <div class="modal-body">
+        <div class="accordion">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="accordion2" href="#collapse-endpoints">Endpoints &raquo;</a>
+            </div>
+            <div id="collapse-endpoints" class="in accordion-body collapse">
+              <div class="accordion-inner">
+                <p>The Data API can be accessed via the following actions of the CKAN action API.</p>
+                <table class="table-condensed table-striped table-bordered">
+                  <thead></thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Query</th>
+                      <td><code>https://data.gov.sg/api/action/datastore_search</code></td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="accordion2" href="#collapse-querying">Querying &raquo;</a>
+            </div>
+            <div id="collapse-querying" class="collapse accordion-body in">
+              <div class="accordion-inner">
+                <strong>Query example (first 5 results)</strong>
+                <p>
+                <code><a href="https://data.gov.sg/api/action/datastore_search?resource_id=a9a9327f-7634-4367-be7f-d679a729bd96&amp;limit=5" target="_blank">https://data.gov.sg/api/action/datastore_search?resource_id=a9a9327f-7634-4367-be7f-d679a729bd96&limit=5</a></code>
+                </p>
+
+                <strong>Query example (results containing &#39;jones&#39;)</strong>
+                <p>
+                <code><a href="https://data.gov.sg/api/action/datastore_search?resource_id=a9a9327f-7634-4367-be7f-d679a729bd96&amp;q=jones"
+                    target="_blank">https://data.gov.sg/api/action/datastore_search?resource_id=a9a9327f-7634-4367-be7f-d679a729bd96&q=jones</a></code>
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-group">
+            <div class="accordion-heading">
+             <a class="accordion-toggle" data-toggle="collapse" data-parent="accordion2" href="#collapse-javascript">Example: Javascript &raquo;</a>
+            </div>
+            <div id="collapse-javascript" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <p>A simple ajax (JSONP) request to the data API using jQuery.</p>
+                <pre>
+var data = {
+  resource_id: 'a9a9327f-7634-4367-be7f-d679a729bd96', // the resource id
+  limit: 5, // get 5 results
+  q: 'jones' // query for 'jones'
+};
+$.ajax({
+  url: 'https://data.gov.sg/api/action/datastore_search',
+  data: data,
+  dataType: 'jsonp',
+  success: function(data) {
+    alert('Total results found: ' + data.result.total)
+  }
+});
+                </pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="accordion2" href="#collapse-python">Example: Python &raquo;</a>
+            </div>
+            <div id="collapse-python" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <pre>
+import urllib
+url = 'https://data.gov.sg/api/action/datastore_search?resource_id=a9a9327f-7634-4367-be7f-d679a729bd96&amp;limit=5&amp;q=title:jones'
+fileobj = urllib.urlopen(url)
+print fileobj.read()
+                </pre>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                 <!-- </div> -->
+
+
+              
+            
+
+            
+            <button class="btn datagovsg-btn btn-right btn-blue ga-dataset-embed-chart"
+                    data-ga=a9a9327f-7634-4367-be7f-d679a729bd96
+                    data-toggle="modal" data-target="#embedModal">
+              <img class="button-icon" src='https://data.gov.sg/images/icons/Embed.svg'/>Embed Chart
+            </button>
+
+            
+            <div class="modal" id="embedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">View Embedding Instructions</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>Copy the following html into your webpage to embed this view</p>
+                    <code class="language-html well" data-lage="html">
+                      &lt;iframe
+                      width="600"
+                      height="400"
+                      src="https://data.gov.sg/dataset/listing-of-registered-contractors/resource/a9a9327f-7634-4367-be7f-d679a729bd96/view/bd811027-d43e-4102-abed-559ec23813f4"
+                      frameBorder="0"&gt;
+                      &lt;/iframe&gt;
+                    </code>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+        </div>
+
+        
+        
+        <div id="view-bd811027-d43e-4102-abed-559ec23813f4" class="resource-view table-view">
+          
+            <iframe frameborder="0"
+                    src="https://data.gov.sg/dataset/listing-of-registered-contractors/resource/a9a9327f-7634-4367-be7f-d679a729bd96/view/bd811027-d43e-4102-abed-559ec23813f4" ></iframe>
+          
+        </div>
+
+        
+
+      
+
+      <div class="module-content">
+        <div class="resource-description">
+          
+        </div>
+        
+        <div class="resource-item-fields">
+          
+
+
+<span class="title">Columns</span>
+<div class='resource-fields'>
+  <div class="hidden-phone">
+    <table class="table table-condensed" >
+     
+      <col class="field-index">
+      <col class="field-name"/>
+      <col class="field-title"/>
+      <col class="field-type"/>
+      <col class="field-units"/>
+      <col class="field-desc"/>
+
+      <thead>
+        <tr>
+          <th class="field-index">No.</th>
+          <th class="field-name">Name</th>
+          <th class="field-title">Title</th>
+          <th class="field-type">Type</th>
+          <th class="field-units">Unit of Measure</th>
+          <th class="field-desc">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td class="field-index" width="10%">1</td>
+          <td>company_name</td>
+          <td>Company Name</td>
+          <td class="field-type">
+            Text (General)
+            
+            
+          </td>
+          <td>-</td>
+          <td>
+            
+            
+              
+                Company Name
+                
+              
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" width="10%">2</td>
+          <td>uen_no</td>
+          <td>UEN No</td>
+          <td class="field-type">
+            Text (General)
+            
+            
+          </td>
+          <td>-</td>
+          <td>
+            
+            
+              
+                UEN No
+                
+              
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" width="10%">3</td>
+          <td>workhead</td>
+          <td>Workhead</td>
+          <td class="field-type">
+            Text (General)
+            
+            
+          </td>
+          <td>-</td>
+          <td>
+            
+            
+              
+                Workhead
+                
+              
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" width="10%">4</td>
+          <td>grade</td>
+          <td>Grade</td>
+          <td class="field-type">
+            Text (General)
+            
+            
+          </td>
+          <td>-</td>
+          <td>
+            
+            
+              
+                Grade
+                
+              
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" width="10%">5</td>
+          <td>additional_info</td>
+          <td>Additional Info</td>
+          <td class="field-type">
+            Text (General)
+            
+            
+          </td>
+          <td>-</td>
+          <td>
+            
+            
+              
+                Additional Info
+                 <br>
+              
+                "na" : Data not available or not applicable
+                
+              
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" width="10%">6</td>
+          <td>expiry_date</td>
+          <td>Expiry Date</td>
+          <td class="field-type">
+            Text (General)
+            
+            
+          </td>
+          <td>-</td>
+          <td>
+            
+            
+              
+                Expiry Date
+                
+              
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" width="10%">7</td>
+          <td>building_no</td>
+          <td>Building No</td>
+          <td class="field-type">
+            Text (Address)
+            
+            
+          </td>
+          <td>-</td>
+          <td>
+            
+            
+              
+                Building No
+                
+              
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" width="10%">8</td>
+          <td>street_name</td>
+          <td>Street Name</td>
+          <td class="field-type">
+            Text (Address)
+            
+            
+          </td>
+          <td>-</td>
+          <td>
+            
+            
+              
+                Street Name
+                
+              
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" width="10%">9</td>
+          <td>unit_no</td>
+          <td>Unit No</td>
+          <td class="field-type">
+            Text (Address)
+            
+            
+          </td>
+          <td>-</td>
+          <td>
+            
+            
+              
+                Unit No
+                 <br>
+              
+                "na" : Data not available or not applicable
+                
+              
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" width="10%">10</td>
+          <td>building_name</td>
+          <td>Building Name</td>
+          <td class="field-type">
+            Text (Address)
+            
+            
+          </td>
+          <td>-</td>
+          <td>
+            
+            
+              
+                Building Name
+                 <br>
+              
+                "na" : Data not available or not applicable
+                
+              
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" width="10%">11</td>
+          <td>postal_code</td>
+          <td>Postal Code</td>
+          <td class="field-type">
+            Text (Postal Code)
+            
+            
+          </td>
+          <td>-</td>
+          <td>
+            
+            
+              
+                Postal Code
+                
+              
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" width="10%">12</td>
+          <td>tel_no</td>
+          <td>Tel No</td>
+          <td class="field-type">
+            Text (General)
+            
+            
+          </td>
+          <td>-</td>
+          <td>
+            
+            
+              
+                Tel No
+                
+              
+            
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="visible-phone">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="field-index text-center">No.</th>
+          <th>Column</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td class="field-index" >1</td>
+          <td>
+            <div><strong>Name:</strong> company_name </div>
+            <div><strong>Title:</strong> Company Name</div>
+            <div>
+              <strong>Type:</strong> 
+              <div class="field-type">Text (General)
+              
+              
+            </div>
+            <div>
+              <strong>Unit of Measure:</strong> 
+              -
+            </div>
+            <div>
+              <strong>Description:</strong> 
+              
+              
+                <br>
+                
+                  Company Name
+                  
+                
+              
+            </div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" >2</td>
+          <td>
+            <div><strong>Name:</strong> uen_no </div>
+            <div><strong>Title:</strong> UEN No</div>
+            <div>
+              <strong>Type:</strong> 
+              <div class="field-type">Text (General)
+              
+              
+            </div>
+            <div>
+              <strong>Unit of Measure:</strong> 
+              -
+            </div>
+            <div>
+              <strong>Description:</strong> 
+              
+              
+                <br>
+                
+                  UEN No
+                  
+                
+              
+            </div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" >3</td>
+          <td>
+            <div><strong>Name:</strong> workhead </div>
+            <div><strong>Title:</strong> Workhead</div>
+            <div>
+              <strong>Type:</strong> 
+              <div class="field-type">Text (General)
+              
+              
+            </div>
+            <div>
+              <strong>Unit of Measure:</strong> 
+              -
+            </div>
+            <div>
+              <strong>Description:</strong> 
+              
+              
+                <br>
+                
+                  Workhead
+                  
+                
+              
+            </div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" >4</td>
+          <td>
+            <div><strong>Name:</strong> grade </div>
+            <div><strong>Title:</strong> Grade</div>
+            <div>
+              <strong>Type:</strong> 
+              <div class="field-type">Text (General)
+              
+              
+            </div>
+            <div>
+              <strong>Unit of Measure:</strong> 
+              -
+            </div>
+            <div>
+              <strong>Description:</strong> 
+              
+              
+                <br>
+                
+                  Grade
+                  
+                
+              
+            </div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" >5</td>
+          <td>
+            <div><strong>Name:</strong> additional_info </div>
+            <div><strong>Title:</strong> Additional Info</div>
+            <div>
+              <strong>Type:</strong> 
+              <div class="field-type">Text (General)
+              
+              
+            </div>
+            <div>
+              <strong>Unit of Measure:</strong> 
+              -
+            </div>
+            <div>
+              <strong>Description:</strong> 
+              
+              
+                <br>
+                
+                  Additional Info
+                   <br>
+                
+                  "na" : Data not available or not applicable
+                  
+                
+              
+            </div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" >6</td>
+          <td>
+            <div><strong>Name:</strong> expiry_date </div>
+            <div><strong>Title:</strong> Expiry Date</div>
+            <div>
+              <strong>Type:</strong> 
+              <div class="field-type">Text (General)
+              
+              
+            </div>
+            <div>
+              <strong>Unit of Measure:</strong> 
+              -
+            </div>
+            <div>
+              <strong>Description:</strong> 
+              
+              
+                <br>
+                
+                  Expiry Date
+                  
+                
+              
+            </div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" >7</td>
+          <td>
+            <div><strong>Name:</strong> building_no </div>
+            <div><strong>Title:</strong> Building No</div>
+            <div>
+              <strong>Type:</strong> 
+              <div class="field-type">Text (Address)
+              
+              
+            </div>
+            <div>
+              <strong>Unit of Measure:</strong> 
+              -
+            </div>
+            <div>
+              <strong>Description:</strong> 
+              
+              
+                <br>
+                
+                  Building No
+                  
+                
+              
+            </div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" >8</td>
+          <td>
+            <div><strong>Name:</strong> street_name </div>
+            <div><strong>Title:</strong> Street Name</div>
+            <div>
+              <strong>Type:</strong> 
+              <div class="field-type">Text (Address)
+              
+              
+            </div>
+            <div>
+              <strong>Unit of Measure:</strong> 
+              -
+            </div>
+            <div>
+              <strong>Description:</strong> 
+              
+              
+                <br>
+                
+                  Street Name
+                  
+                
+              
+            </div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" >9</td>
+          <td>
+            <div><strong>Name:</strong> unit_no </div>
+            <div><strong>Title:</strong> Unit No</div>
+            <div>
+              <strong>Type:</strong> 
+              <div class="field-type">Text (Address)
+              
+              
+            </div>
+            <div>
+              <strong>Unit of Measure:</strong> 
+              -
+            </div>
+            <div>
+              <strong>Description:</strong> 
+              
+              
+                <br>
+                
+                  Unit No
+                   <br>
+                
+                  "na" : Data not available or not applicable
+                  
+                
+              
+            </div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" >10</td>
+          <td>
+            <div><strong>Name:</strong> building_name </div>
+            <div><strong>Title:</strong> Building Name</div>
+            <div>
+              <strong>Type:</strong> 
+              <div class="field-type">Text (Address)
+              
+              
+            </div>
+            <div>
+              <strong>Unit of Measure:</strong> 
+              -
+            </div>
+            <div>
+              <strong>Description:</strong> 
+              
+              
+                <br>
+                
+                  Building Name
+                   <br>
+                
+                  "na" : Data not available or not applicable
+                  
+                
+              
+            </div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" >11</td>
+          <td>
+            <div><strong>Name:</strong> postal_code </div>
+            <div><strong>Title:</strong> Postal Code</div>
+            <div>
+              <strong>Type:</strong> 
+              <div class="field-type">Text (Postal Code)
+              
+              
+            </div>
+            <div>
+              <strong>Unit of Measure:</strong> 
+              -
+            </div>
+            <div>
+              <strong>Description:</strong> 
+              
+              
+                <br>
+                
+                  Postal Code
+                  
+                
+              
+            </div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" >12</td>
+          <td>
+            <div><strong>Name:</strong> tel_no </div>
+            <div><strong>Title:</strong> Tel No</div>
+            <div>
+              <strong>Type:</strong> 
+              <div class="field-type">Text (General)
+              
+              
+            </div>
+            <div>
+              <strong>Unit of Measure:</strong> 
+              -
+            </div>
+            <div>
+              <strong>Description:</strong> 
+              
+              
+                <br>
+                
+                  Tel No
+                  
+                
+              
+            </div>
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+        </div>
+        
+        <div class="resource-fields-additional-info">
+          <span class="title">Additional Information</span>
+          <table class="table table-condensed" data-module="table-toggle-more">
+            <tbody>
+              <tr>
+                <th scope="row">Last updated</th>
+                <td>January 4, 2023</td>
+              </tr>
+              <tr>
+                <th scope="row">Created</th>
+                <td>June 21, 2016</td>
+              </tr>
+              <tr>
+                <th scope="row">Format</th>
+                <td>CSV</td>
+              </tr>
+              
+                <tr>
+                  <th scope="row">Coverage</th>
+                  <td>
+                    
+                      July 1, 2016 to January 1, 2023
+                    
+                  </td>
+                </tr>
+              
+              <tr>
+                <th scope="row">Licence</th>
+                
+                <td class="dataset-details"><a href="https://data.gov.sg/open-data-licence" rel="dc:rights">Singapore Open Data Licence</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  
+</div>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">About this dataset</h2>
+      <article class="card">
+        <div class="dataset-description">
+          
+          <p>This dataset contains the list of contractors registered in BCA Contractor Registration System (CRS). The BCA Contractors Registration System (CRS) serves the construction and construction-related procurement needs of the public sector including government ministries and statutory boards.</p>
+        </div>
+        <div class="dataset-metadata">
+          
+
+<article class="metadata-card">
+  <table class="table">
+    <tbody>
+      
+
+      <tr>
+        <th scope="row">Managed By</th>
+        <td><a href="https://data.gov.sg/dataset?organization=building-and-construction-authority">Building and Construction Authority</a></td>
+      </tr>
+
+      
+        <tr>
+          <th scope="row">Last Updated</th>
+          <td>January 4, 2023, 09:49 (SGT)</td>
+        </tr>
+      
+
+      
+        <tr>
+          <th scope="row">Created</th>
+          <td>June 21, 2016, 09:53 (SGT)</td>
+        </tr>
+      
+
+      
+        
+        <tr>
+          <th scope="row">Coverage</th>
+          
+            
+            <td>July 1, 2016 to January 1, 2023</td>
+            
+        </tr>
+      
+
+      
+        <tr>
+          <th scope="row">Frequency</th>
+          <td>Half-yearly</td>
+        </tr>
+      
+
+      
+
+      
+        
+        
+          
+        
+        
+          <tr>
+            <th scope="row">Source(s)</th>
+            <td>Building and Construction Authority</td>
+          </tr>
+        
+      
+
+      
+
+
+      <tr>
+        <th scope="row">Licence</th>
+        <td><a href="https://data.gov.sg/open-data-licence">Singapore Open Data Licence</a></td>
+      </tr>
+
+
+    </tbody>
+  </table>
+</article>
+        </div>
+      </article>
+  </div>
+</section>
+
+
+
+<section class="similar-datasets">
+  <div class="container">
+    <h2 class="section-title">Similar Datasets</h2>
+    <article class="card similar-datasets-card">
+      <div class="row-flex">
+        
+        
+        <div class="package-card">
+        <!-- <div class="col-sm-6 col-md-4"> -->
+          
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=2b37b013-4f4d-49ac-abba-f99db0a4e4ca href="https://data.gov.sg/dataset/listing-of-licensed-builders">
+      Listing of Licensed Builders
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=building-and-construction-authority
+      href="https://data.gov.sg/dataset?organization=building-and-construction-authority">
+      Building and Construction Authority
+    </a>
+    
+    /
+    04 Jan 2023
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">This dataset contains the list of licensed builders. The Licensing of Builders Scheme is part of BCA’s long-term plan to upgrade the safety and quality standards of the construction sector. The aim of licensing of builders is to raise professionalism among builders by requiring them to meet minimum standards of management, safety record and financial solvency.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=https://data.gov.sg/images/icons/file_type/CSV.svg/>
+  
+</div>
+
+</article>
+        </div>
+        
+        <div class="package-card">
+        <!-- <div class="col-sm-6 col-md-4"> -->
+          
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=b33cd72e-1486-4dc7-ac7b-bae2f86d22f1 href="https://data.gov.sg/dataset/construction-material-market-prices-monthly">
+      Construction Material Market Prices, Monthly
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=building-and-construction-authority
+      href="https://data.gov.sg/dataset?organization=building-and-construction-authority">
+      Building and Construction Authority
+    </a>
+    
+    /
+    19 Aug 2022
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Construction Material Market Prices, Monthly</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=https://data.gov.sg/images/icons/file_type/CSV.svg/>
+  
+</div>
+
+</article>
+        </div>
+        
+        <div class="package-card">
+        <!-- <div class="col-sm-6 col-md-4"> -->
+          
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=c253f7b2-3279-4d83-afc7-95716aa3269e href="https://data.gov.sg/dataset/hdb-cycling-paths-under-construction">
+      HDB Cycling Paths Under-Construction
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=housing-and-development-board
+      href="https://data.gov.sg/dataset?organization=housing-and-development-board">
+      Housing and Development Board
+    </a>
+    
+    /
+    19 Aug 2021
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">This layer displays the cycling paths implemented by HDB which are currently under construction.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=https://data.gov.sg/images/icons/file_type/KML.svg/>
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=https://data.gov.sg/images/icons/file_type/GEOJSON.svg/>
+  
+</div>
+
+</article>
+        </div>
+        
+        <div class="package-card">
+        <!-- <div class="col-sm-6 col-md-4"> -->
+          
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=2b100027-8644-467b-b1f3-58216b639664 href="https://data.gov.sg/dataset/hdb-roads-under-construction">
+      HDB Roads Under Construction
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=housing-and-development-board
+      href="https://data.gov.sg/dataset?organization=housing-and-development-board">
+      Housing and Development Board
+    </a>
+    
+    /
+    08 Jan 2020
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">This layer displays roads implemented by HDB which are currently under construction.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=https://data.gov.sg/images/icons/file_type/KML.svg/>
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=https://data.gov.sg/images/icons/file_type/GEOJSON.svg/>
+  
+</div>
+
+</article>
+        </div>
+        
+        <div class="package-card">
+        <!-- <div class="col-sm-6 col-md-4"> -->
+          
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=92a0db4b-d57c-4909-a385-571e02d8cdbb href="https://data.gov.sg/dataset/hdb-lift-upgrading-programme-proposed-and-under-construction-lup">
+      HDB Lift Upgrading Programme Proposed and Under-Construction (LUP)
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=housing-and-development-board
+      href="https://data.gov.sg/dataset?organization=housing-and-development-board">
+      Housing and Development Board
+    </a>
+    
+    /
+    19 Aug 2021
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">This layer displays the proposed HDB Lift Upgrading Programme (LUP) projects and also those LUP projects which are currently under construction.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=https://data.gov.sg/images/icons/file_type/KML.svg/>
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=https://data.gov.sg/images/icons/file_type/GEOJSON.svg/>
+  
+</div>
+
+</article>
+        </div>
+        
+        
+      </div>
+    </article>
+  </div>
+</section>
+
+    </main>
+    
+
+    
+
+    
+    <footer class="site-footer">
+      <div class='container'>
+      
+        <div class="row">
+          <div class="col-xs-12 col-md-7 footer-groups">
+            <div class="attribution-group text-left">
+              <h2>Built by</h2>
+              <br>
+                <a href="https://open.gov.sg/">Open Government Products</a><small class="text-muted"> - A Division of GovTech.</small><br><br>
+              <div><small>Last updated on January 24, 2023</small></div>
+              <small>&copy; 2020 Government of Singapore</small>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3 footer-groups">
+            <h2>Useful Links</h2>
+              <div class="footer-link">
+                <a class="ga-footer-about" href="https://data.gov.sg/about">About Us</a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-privacy" href="https://data.gov.sg/privacy-and-website-terms">Privacy &amp; Website Terms</a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-odl" href="https://data.gov.sg/open-data-licence">Open Data Licence</a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-developer-guide" href="https://data.gov.sg/developer">Developers</a>
+              </div>
+            </div>
+          <div class="col-xs-12 col-md-2 footer-groups">
+            <h2>Find Us</h2>
+              <div class="footer-link">
+                <a class="ga-footer-email" href="mailto:feedback@data.gov.sg?Subject=[Data.gov.sg] Feedback">
+                <img class="footer-site-icon"
+                  src="https://data.gov.sg/images/email_white.png"
+                  title="Email"/>Email
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-facebook" href="https://www.facebook.com/opendatasg/">
+                  <img class="footer-site-icon"
+                  src="https://data.gov.sg/images/fb_white.svg"
+                  title="Facebook"/>Facebook
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-twitter" href="https://twitter.com/datagovsg">
+                  <img class="footer-site-icon"
+                  src="https://data.gov.sg/images/twitter_white.svg"
+                  title="Twitter"/>Twitter
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-medium" href="https://blog.data.gov.sg/">
+                <img class="footer-site-icon"
+                  src="https://data.gov.sg/images/medium_white.svg"
+                  title="Medium"/>Medium
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-github" href="https://github.com/datagovsg">
+                <img class="footer-site-icon"
+                  src="https://data.gov.sg/images/github_white.svg"
+                  title="Github"/>Github
+                </a>
+              </div>
+          </div>
+
+
+
+   <!--      <nav class="footer-links">
+
+        </nav>
+ -->
+      
+      </div>
+    </footer>
+    
+
+    
+    
+    <footer class="site-account text-right text-muted">
+      <div class="container">
+        <small>
+          
+          
+          <a href="https://data.gov.sg/user/login">
+            Log In
+          </a>
+          
+        </small>
+      </div>
+    </footer>
+    
+
+    
+      
+    
+  <script>document.getElementsByTagName('html')[0].className += ' js';</script>
+<script type="text/javascript" src="https://data.gov.sg/fanstatic/vendor/:version:2020-12-29T10:24:02/jquery.min.js"></script>
+<script type="text/javascript" src="https://data.gov.sg/fanstatic/vendor/:version:2020-12-29T10:24:02/:bundle:jed.min.js;moment-with-locales.js;select2/select2.min.js"></script>
+<script type="text/javascript" src="https://data.gov.sg/fanstatic/base/:version:2020-12-29T10:24:02/:bundle:plugins/jquery.inherit.min.js;plugins/jquery.proxy-all.min.js;plugins/jquery.url-helpers.min.js;plugins/jquery.date-helpers.min.js;plugins/jquery.slug.min.js;plugins/jquery.slug-preview.min.js;plugins/jquery.truncator.min.js;plugins/jquery.masonry.min.js;plugins/jquery.form-warning.min.js;sandbox.min.js;module.min.js;pubsub.min.js;client.min.js;notify.min.js;i18n.min.js;main.min.js"></script>
+<script type="text/javascript" src="https://data.gov.sg/fanstatic/datagovsg-lib/:version:2021-02-09T17:59:43/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="https://data.gov.sg/fanstatic/datagovsg-js/:version:2023-01-16T16:56:32.50/snippets/ga-events.min.js"></script></body>
+  
+
+
+<!-- Mirrored from data.gov.sg/dataset/listing-of-registered-contractors by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Jan 2023 04:48:51 GMT -->
+</html>

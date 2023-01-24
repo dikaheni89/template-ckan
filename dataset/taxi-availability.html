@@ -1,0 +1,998 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en_GB">
+
+  
+  
+<!-- Mirrored from data.gov.sg/dataset/taxi-availability by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Jan 2023 04:19:54 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!--[if lte ie 8]><script type="text/javascript" src="/fanstatic/vendor/:version:2020-12-29T10:24:02/html5.min.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="../fanstatic/vendor/_version_2020-12-29T10_24_02/select2/select2.css" />
+<link rel="stylesheet" type="text/css" href="../fanstatic/datagovsg-css/_version_2023-01-16T16_56_33.75/datagovsg.min.css" />
+<link rel="stylesheet" type="text/css" href="../fanstatic/datagovsg-css/_version_2023-01-16T16_56_33.75/package/read.min.css" />
+<link rel="stylesheet" type="text/css" href="../fanstatic/datagovsg-resourceviews-css/_version_2021-02-09T18_05_59/resource_views/api_view.css" />
+<link rel="stylesheet" type="text/css" href="../fanstatic/datagovsg-resourceviews-lib/_version_2021-02-09T17_59_43/_bundle_swagger/swagger-ui.css%3bswagger/theme-flattop.css" />
+
+
+    <title>
+      Taxi Availability-Data.gov.sg
+      
+    </title>
+
+    
+    <meta charset="utf-8">
+    <meta name="generator" content="ckan ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no">
+    <meta name="description" content="For access to real-time taxi availability data.
+Returns location coordinates of all Taxis that are currently available for
+hire. Does not include &#34;Hired&#34; or &#34;Busy&#34; Taxis.">
+    <meta name="theme-color" content="#113355">
+    <meta name="application-name" content="Data.gov.sg">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@datagovsg">
+    <meta name="twitter:title" content="Taxi Availability-Data.gov.sg
+      ">
+    <meta name="twitter:description" content="For access to real-time taxi availability data.
+Returns location coordinates of all Taxis that are currently available for
+hire. Does not include &#34;Hired&#34; or &#34;Busy&#34; Taxis.">
+    <meta name="twitter:url" content="taxi-availability.html">
+    <meta name="twitter:image:src" content="../images/thumbnail.png">
+    
+    <meta property="og:title" content="Taxi Availability-Data.gov.sg
+      " />
+    <meta property="og:description" content="For access to real-time taxi availability data.
+Returns location coordinates of all Taxis that are currently available for
+hire. Does not include &#34;Hired&#34; or &#34;Busy&#34; Taxis." />
+    <meta property="og:type" content="article" >
+    <meta property="og:url" content="taxi-availability.html" >
+    <meta property="og:image" content="../images/thumbnail.png" >
+    <meta property="og:site_name" content="Data.gov.sg" >
+    
+    <meta name="apple-mobile-web-app-title" content="Data.gov.sg">
+    
+    <meta name="msapplication-TileColor" content="#113355">
+    <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.html">
+    
+
+    
+    <link rel="manifest" href="../manifest.json">
+    
+    <link rel="mask-icon" href="../images/favicons/safari-pinned-tab.svg" color="#223344">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico" >
+    <link rel="icon" type="image/png" href="../images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../images/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../images/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="../images/favicons/favicon-194x194.png" sizes="194x194">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicons/apple-touch-icon-180x180.png">
+    
+
+    
+
+      
+    
+
+
+
+    
+    
+    
+    
+    
+    <script>
+      // Check if script is being ran from Iframe within data.gov.sg.
+      // This prevents dobule counting in Google Analytics tracking when page views are
+      // triggered twice due to embedding of iframe. This allows us to continue tracking
+      // users who are properly embedding the charts.
+      nodeName = window.frameElement ? window.frameElement.nodeName : 'default'
+      if (!(window.location.hostname.indexOf("data.gov.sg") > -1 && nodeName == "IFRAME")) {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-64941664-1', 'auto');
+        ga('send', 'pageview');
+
+        window.onload = function () {
+          //track resource downloads
+          document.body.addEventListener('click', function(event) {
+            var element = findElWithClass(event);
+            if (element !== null && typeof element.className == "string"){
+              var classes = element.className.split(' ');
+              for (var event_type in ga_events) {
+                if (classes.indexOf(event_type) > -1 ) {
+                  var eventCategory = ga_events[event_type].eventCategory;
+                  var eventAction = ga_events[event_type].eventAction;
+                  var eventLabel = element.getAttribute("data-ga") + ": " + window.location.href;
+
+                  if (event_type == "ga-dataset-download") {
+                    eventLabel = element.getAttribute("data-ga");
+                  }
+                  ga('send', 'event', eventCategory, eventAction, eventLabel);
+                }
+              }
+            }
+          });
+        };
+      }
+
+      function findElWithClass(el) {
+        if (el.target) {
+          el = el.target;
+          while (el) {
+            if (typeof el.className == "string"){
+              var classes = el.className.split(' ');
+              for (var event_type in ga_events) {
+                if (classes.indexOf(event_type) > -1 ) {
+                  return el;
+                }
+              }
+            }
+            el = el.parentNode;
+          }
+          return null;
+        }
+      }
+    </script>
+    
+    
+
+  </head>
+  
+
+  
+  <body>
+
+    
+    
+    <nav class="site-nav">
+      <div class="container">
+        <a href="../index.html">
+          <img class="site-logo"
+               src="../images/logo.svg"
+               alt="Data.gov.sg"
+               title="Data.gov.sg"/>
+        </a>
+        <a href="../index.html" class="site-title">Data.gov.sg</a>
+        <div class="flex-spacer"></div>
+
+        
+        <a class="site-link ga-nav-topic-dropdown" data-toggle="collapse" href=".html">Topics<span class="caret"></span></a>
+        
+
+
+        <a class="site-link ga-nav-blog" href='https://blog.data.gov.sg/'>Blog</a>
+        <a class="site-link ga-nav-developers" href='../developer.html'>Developers</a>
+        <a class="site-link ga-nav-request" href='https://github.com/datagovsg/datagovsg-datasets/issues/new?title=Dataset%20request:%20%3Cdataset%20title%3E'>Data Request</a>
+
+      </div>
+    </nav>
+    
+
+    
+    <div class="collapse topic-collapse">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Economy
+               href="../group/economy.html">
+              <img class="hover-on" src=../images/group_icons/active/economy.svg>
+              <img class="hover-off" src=../images/group_icons/inactive/economy.svg>
+              <h5 class="topic-title"><small>Economy</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Education
+               href="../group/education.html">
+              <img class="hover-on" src=../images/group_icons/active/education.svg>
+              <img class="hover-off" src=../images/group_icons/inactive/education.svg>
+              <h5 class="topic-title"><small>Education</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Environment
+               href="../group/environment.html">
+              <img class="hover-on" src=../images/group_icons/active/environment.svg>
+              <img class="hover-off" src=../images/group_icons/inactive/environment.svg>
+              <h5 class="topic-title"><small>Environment</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Finance
+               href="../group/finance.html">
+              <img class="hover-on" src=../images/group_icons/active/finance.svg>
+              <img class="hover-off" src=../images/group_icons/inactive/finance.svg>
+              <h5 class="topic-title"><small>Finance</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Health
+               href="../group/health.html">
+              <img class="hover-on" src=../images/group_icons/active/health.svg>
+              <img class="hover-off" src=../images/group_icons/inactive/health.svg>
+              <h5 class="topic-title"><small>Health</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Infrastructure
+               href="../group/infrastructure.html">
+              <img class="hover-on" src=../images/group_icons/active/infrastructure.svg>
+              <img class="hover-off" src=../images/group_icons/inactive/infrastructure.svg>
+              <h5 class="topic-title"><small>Infrastructure</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Society
+               href="../group/society.html">
+              <img class="hover-on" src=../images/group_icons/active/society.svg>
+              <img class="hover-off" src=../images/group_icons/inactive/society.svg>
+              <h5 class="topic-title"><small>Society</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Technology
+               href="../group/technology.html">
+              <img class="hover-on" src=../images/group_icons/active/technology.svg>
+              <img class="hover-off" src=../images/group_icons/inactive/technology.svg>
+              <h5 class="topic-title"><small>Technology</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Transport
+               href="../group/transport.html">
+              <img class="hover-on" src=../images/group_icons/active/transport.svg>
+              <img class="hover-off" src=../images/group_icons/inactive/transport.svg>
+              <h5 class="topic-title"><small>Transport</small></h5>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+    <header class="site-header "
+            style="background-image: url()">
+      
+      
+      
+      
+    </header>
+    
+
+
+    
+    
+    <main class="site-main">
+      
+
+<div class="header-div">
+  <div class="container">
+    <div class="package-title-section">
+      <h2 class="package-title">Taxi Availability</h2>
+      <div class="package-title-buttons">
+      
+      
+
+      
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dataset-resource-views">
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+<div class="resource-views-header">
+    <div class="resource-selector-header">
+      FILES IN THIS DATASET
+    </div>
+</div>
+
+<div class="resource-views-body">
+
+  
+  
+
+  <div class="resource-selector-container">
+    <ul class="resource-selector nav hidden-xs">
+      
+      <li class="active">
+        <a class="ga-dataset-resource-selector"
+           href="taxi-availability5289.html?resource_id=9d217820-1350-4032-a7a3-3cd83e222eb7">
+          Taxi Availability
+          <div>
+            <img class="format-icon"
+            src=../images/icons/file_type/API.svg/index.html>
+          </div>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+
+  <div class="resource-detail-container">
+    <div class="resource-detail container-fluid">
+
+
+        <div class="resource-controls-mobile">
+          
+          
+
+          
+          
+          Views for this resource:
+          <select class="resource-control text-center view-select" onchange="window.location.href = this.value;">
+            
+            <option 
+                    selected=true
+                    
+                    value="/dataset/taxi-availability?view_id=7534780c-e99f-4713-9d87-870071919734&amp;resource_id=9d217820-1350-4032-a7a3-3cd83e222eb7">
+              API View
+            </option>
+            
+            <option 
+                    value="/dataset/taxi-availability?view_id=5ad2510e-6b51-4ffe-9504-6661061a708c&amp;resource_id=9d217820-1350-4032-a7a3-3cd83e222eb7">
+              Map
+            </option>
+            
+          </select>
+          
+        </div>
+
+      
+        
+        
+        <div class="resource-controls">
+          <span>Views: </span>
+          
+            
+
+            
+
+            <a class="view-tab ga-dataset-resource-view-selector active api" data-ga=API View href=taxi-availability39e9.html?view_id=7534780c-e99f-4713-9d87-870071919734&amp;resource_id=9d217820-1350-4032-a7a3-3cd83e222eb7>
+              <div></div>
+              <img class="active" src="../images/icons/resource_view_selectors/active/api.svg"/>
+              <img class="inactive" src="../images/icons/resource_view_selectors/inactive/api.svg"/>
+              <img class="inactive hover" src="../images/icons/resource_view_selectors/hover/api.svg"/>
+            </a>
+          
+            
+
+            
+
+            <a class="view-tab ga-dataset-resource-view-selector  map" data-ga=Map href=taxi-availability2b70.html?view_id=5ad2510e-6b51-4ffe-9504-6661061a708c&amp;resource_id=9d217820-1350-4032-a7a3-3cd83e222eb7>
+              <div></div>
+              <img class="inactive" src="../images/icons/resource_view_selectors/active/map.svg"/>
+              <img class="active" src="../images/icons/resource_view_selectors/inactive/map.svg"/>
+              <img class="inactive hover" src="../images/icons/resource_view_selectors/hover/map.svg"/>
+            </a>
+          
+
+          <div class="resource-embed-container">
+            
+            
+
+              
+            
+
+            
+            <button class="btn datagovsg-btn btn-right btn-blue ga-dataset-embed-chart"
+                    data-ga=9d217820-1350-4032-a7a3-3cd83e222eb7
+                    data-toggle="modal" data-target="#embedModal">
+              <img class="button-icon" src='../images/icons/Embed.svg'/>Embed Chart
+            </button>
+
+            
+            <div class="modal" id="embedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">View Embedding Instructions</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>Copy the following html into your webpage to embed this view</p>
+                    <code class="language-html well" data-lage="html">
+                      &lt;iframe
+                      width="600"
+                      height="400"
+                      src="https://data.gov.sg/dataset/taxi-availability/resource/9d217820-1350-4032-a7a3-3cd83e222eb7/view/7534780c-e99f-4713-9d87-870071919734"
+                      frameBorder="0"&gt;
+                      &lt;/iframe&gt;
+                    </code>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+            <div class="resource-view-title">
+              API View
+            </div>
+          
+
+        </div>
+
+        
+        
+        <div id="view-7534780c-e99f-4713-9d87-870071919734" class="resource-view api-view">
+          
+            
+
+
+
+
+<div id="api-view" data-module="api-view"
+  data-module-resource-id="9d217820-1350-4032-a7a3-3cd83e222eb7"
+  data-module-resource-view-id="7534780c-e99f-4713-9d87-870071919734"
+  data-module-endpoint="/transport/taxi-availability">
+
+  <div id="swagger" class="swagger-ui"></div>
+
+</div>
+<div class="source">Source: <a target="_blank" href="taxi-availability39e9.html?view_id=7534780c-e99f-4713-9d87-870071919734&amp;resource_id=9d217820-1350-4032-a7a3-3cd83e222eb7">Data.gov.sg</a></div>
+          
+        </div>
+
+        
+
+      
+
+      <div class="module-content">
+        <div class="resource-description">
+          
+        </div>
+        
+        <div class="resource-fields-additional-info">
+          <span class="title">Additional Information</span>
+          <table class="table table-condensed" data-module="table-toggle-more">
+            <tbody>
+              <tr>
+                <th scope="row">Last updated</th>
+                <td>April 8, 2016</td>
+              </tr>
+              <tr>
+                <th scope="row">Created</th>
+                <td>April 8, 2016</td>
+              </tr>
+              <tr>
+                <th scope="row">Format</th>
+                <td>API</td>
+              </tr>
+              
+                <tr>
+                  <th scope="row">Coverage</th>
+                  <td>
+                    
+                      From January 13, 2016
+                    
+                  </td>
+                </tr>
+              
+              <tr>
+                <th scope="row">Licence</th>
+                
+                <td class="dataset-details"><a href="../open-data-licence.html" rel="dc:rights">Singapore Open Data Licence</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  
+</div>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">About this dataset</h2>
+      <article class="card">
+        <div class="dataset-description">
+          
+          <p>For access to real-time taxi availability data.
+Returns location coordinates of all Taxis that are currently available for
+hire. Does not include "Hired" or "Busy" Taxis.</p>
+        </div>
+        <div class="dataset-metadata">
+          
+
+<article class="metadata-card">
+  <table class="table">
+    <tbody>
+      
+
+      <tr>
+        <th scope="row">Managed By</th>
+        <td><a href="../dataset1fb9.html?organization=land-transport-authority">Land Transport Authority</a></td>
+      </tr>
+
+      
+        <tr>
+          <th scope="row">Last Updated</th>
+          <td>January 21, 2022, 13:41 (SGT)</td>
+        </tr>
+      
+
+      
+        <tr>
+          <th scope="row">Created</th>
+          <td>April 8, 2016, 14:10 (SGT)</td>
+        </tr>
+      
+
+      
+        
+        <tr>
+          <th scope="row">Coverage</th>
+          
+            <td>From January 13, 2016</td>
+          
+        </tr>
+      
+
+      
+        <tr>
+          <th scope="row">Frequency</th>
+          <td>Real-time</td>
+        </tr>
+      
+
+      
+
+      
+        
+        
+          
+        
+        
+          <tr>
+            <th scope="row">Source(s)</th>
+            <td>Land Transport Authority</td>
+          </tr>
+        
+      
+
+      
+
+
+      <tr>
+        <th scope="row">Licence</th>
+        <td><a href="../open-data-licence.html">Singapore Open Data Licence</a></td>
+      </tr>
+
+
+    </tbody>
+  </table>
+</article>
+        </div>
+      </article>
+  </div>
+</section>
+
+
+
+<section class="similar-datasets">
+  <div class="container">
+    <h2 class="section-title">Similar Datasets</h2>
+    <article class="card similar-datasets-card">
+      <div class="row-flex">
+        
+        
+        <div class="package-card">
+        <!-- <div class="col-sm-6 col-md-4"> -->
+          
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=9b5250d8-0379-4c9c-90a7-86c55672fefe href="monthly-taxi-population-by-company.html">
+      Monthly Taxi Population by Company
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=land-transport-authority
+      href="../dataset1fb9.html?organization=land-transport-authority">
+      Land Transport Authority
+    </a>
+    
+    /
+    14 Mar 2018
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Taxi supply islandwide.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=../images/icons/file_type/CSV.svg/index.html>
+  
+</div>
+
+</article>
+        </div>
+        
+        <div class="package-card">
+        <!-- <div class="col-sm-6 col-md-4"> -->
+          
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=00c1bdb4-cb25-4c24-af90-22f6c6660708 href="lta-taxi-stop.html">
+      LTA Taxi Stop
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=land-transport-authority
+      href="../dataset1fb9.html?organization=land-transport-authority">
+      Land Transport Authority
+    </a>
+    
+    /
+    29 Jul 2020
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">The layer contains the locations of taxi stop in Singapore.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=../images/icons/file_type/KML.svg/index.html>
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=../images/icons/file_type/GEOJSON.svg/index.html>
+  
+</div>
+
+</article>
+        </div>
+        
+        <div class="package-card">
+        <!-- <div class="col-sm-6 col-md-4"> -->
+          
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=e3450a49-4a9e-4e23-9d6d-906126e83fb6 href="commuter-facilities.html">
+      Commuter Facilities (Bus and Taxi)
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=land-transport-authority
+      href="../dataset1fb9.html?organization=land-transport-authority">
+      Land Transport Authority
+    </a>
+    
+    /
+    07 Jun 2017
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">All bus stops, bus interchanges, bus terminals, taxi stops &amp; taxi stands in Singapore.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=../images/icons/file_type/CSV.svg/index.html>
+  
+</div>
+
+</article>
+        </div>
+        
+        <div class="package-card">
+        <!-- <div class="col-sm-6 col-md-4"> -->
+          
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=8eec7cbd-25e9-43c4-be9e-752678dde745 href="public-transport-utilisation-average-trip-distance.html">
+      Public Transport Utilisation - Average Trip Distance
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=land-transport-authority
+      href="../dataset1fb9.html?organization=land-transport-authority">
+      Land Transport Authority
+    </a>
+    
+    /
+    07 Jun 2017
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Average trip distance made islandwide on MRT, LRT, bus &amp; taxi.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=../images/icons/file_type/CSV.svg/index.html>
+  
+</div>
+
+</article>
+        </div>
+        
+        <div class="package-card">
+        <!-- <div class="col-sm-6 col-md-4"> -->
+          
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=e180c35d-8f47-4b55-91c6-ba1cb0c7ac1c href="traffic-images.html">
+      Traffic Images
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=land-transport-authority
+      href="../dataset1fb9.html?organization=land-transport-authority">
+      Land Transport Authority
+    </a>
+    
+    /
+    13 Feb 2018
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Returns links to images of live traffic conditions along expressways and
+Woodlands &amp; Tuas Checkpoints.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=../images/icons/file_type/API.svg/index.html>
+  
+</div>
+
+</article>
+        </div>
+        
+        
+      </div>
+    </article>
+  </div>
+</section>
+
+    </main>
+    
+
+    
+
+    
+    <footer class="site-footer">
+      <div class='container'>
+      
+        <div class="row">
+          <div class="col-xs-12 col-md-7 footer-groups">
+            <div class="attribution-group text-left">
+              <h2>Built by</h2>
+              <br>
+                <a href="https://open.gov.sg/">Open Government Products</a><small class="text-muted"> - A Division of GovTech.</small><br><br>
+              <div><small>Last updated on January 24, 2023</small></div>
+              <small>&copy; 2020 Government of Singapore</small>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3 footer-groups">
+            <h2>Useful Links</h2>
+              <div class="footer-link">
+                <a class="ga-footer-about" href="../about.html">About Us</a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-privacy" href="../privacy-and-website-terms.html">Privacy &amp; Website Terms</a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-odl" href="../open-data-licence.html">Open Data Licence</a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-developer-guide" href="../developer.html">Developers</a>
+              </div>
+            </div>
+          <div class="col-xs-12 col-md-2 footer-groups">
+            <h2>Find Us</h2>
+              <div class="footer-link">
+                <a class="ga-footer-email" href="mailto:feedback@data.gov.sg?Subject=[Data.gov.sg] Feedback">
+                <img class="footer-site-icon"
+                  src="../images/email_white.png"
+                  title="Email"/>Email
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-facebook" href="https://www.facebook.com/opendatasg/">
+                  <img class="footer-site-icon"
+                  src="../images/fb_white.svg"
+                  title="Facebook"/>Facebook
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-twitter" href="https://twitter.com/datagovsg">
+                  <img class="footer-site-icon"
+                  src="../images/twitter_white.svg"
+                  title="Twitter"/>Twitter
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-medium" href="https://blog.data.gov.sg/">
+                <img class="footer-site-icon"
+                  src="../images/medium_white.svg"
+                  title="Medium"/>Medium
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-github" href="https://github.com/datagovsg">
+                <img class="footer-site-icon"
+                  src="../images/github_white.svg"
+                  title="Github"/>Github
+                </a>
+              </div>
+          </div>
+
+
+
+   <!--      <nav class="footer-links">
+
+        </nav>
+ -->
+      
+      </div>
+    </footer>
+    
+
+    
+    
+    <footer class="site-account text-right text-muted">
+      <div class="container">
+        <small>
+          
+          
+          <a href="../user/login.html">
+            Log In
+          </a>
+          
+        </small>
+      </div>
+    </footer>
+    
+
+    
+      
+    
+  <script>document.getElementsByTagName('html')[0].className += ' js';</script>
+<script type="text/javascript" src="../fanstatic/vendor/_version_2020-12-29T10_24_02/jquery.min.js"></script>
+<script type="text/javascript" src="../fanstatic/vendor/_version_2020-12-29T10_24_02/_bundle_jed.min.js%3bmoment-with-locales.js%3bselect2/select2.min.js"></script>
+<script type="text/javascript" src="../fanstatic/base/_version_2020-12-29T10_24_02/_bundle_plugins/jquery.inherit.min.js%3bplugins/jquery.proxy-all.min.js%3bplugins/jquery.url-helpers.min.js%3b/jquery.form-warning.min"></script>
+<script type="text/javascript" src="../fanstatic/datagovsg-lib/_version_2021-02-09T17_59_43/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="../fanstatic/datagovsg-js/_version_2023-01-16T16_56_32.50/snippets/ga-events.min.js"></script>
+<script type="text/javascript" src="../fanstatic/datagovsg-resourceviews-js/_version_2021-02-09T18_05_58/resource_views/api-view.js"></script></body>
+  
+
+
+<!-- Mirrored from data.gov.sg/dataset/taxi-availability by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Jan 2023 04:20:09 GMT -->
+</html>

@@ -1,0 +1,1262 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en_GB">
+
+  
+  
+<!-- Mirrored from data.gov.sg/dataset/covid-19-hospital-admissions by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Jan 2023 04:41:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!--[if lte ie 8]><script type="text/javascript" src="/fanstatic/vendor/:version:2020-12-29T10:24:02/html5.min.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="../fanstatic/vendor/_version_2020-12-29T10_24_02/select2/select2.css" />
+<link rel="stylesheet" type="text/css" href="../fanstatic/datagovsg-css/_version_2023-01-16T16_56_33.75/datagovsg.min.css" />
+<link rel="stylesheet" type="text/css" href="../fanstatic/datagovsg-css/_version_2023-01-16T16_56_33.75/package/read.min.css" />
+<link rel="stylesheet" type="text/css" href="../fanstatic/datagovsg-css/_version_2023-01-16T16_56_33.75/package/snippets/resource_item_fields.min.css" />
+
+
+    <title>
+      COVID-19 Hospital Admissions-Data.gov.sg
+      
+    </title>
+
+    
+    <meta charset="utf-8">
+    <meta name="generator" content="ckan ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no">
+    <meta name="description" content="Data on COVID-19 Hospitalisations">
+    <meta name="theme-color" content="#113355">
+    <meta name="application-name" content="Data.gov.sg">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@datagovsg">
+    <meta name="twitter:title" content="COVID-19 Hospital Admissions-Data.gov.sg
+      ">
+    <meta name="twitter:description" content="Data on COVID-19 Hospitalisations">
+    <meta name="twitter:url" content="covid-19-hospital-admissions.html">
+    <meta name="twitter:image:src" content="../images/thumbnail.png">
+    
+    <meta property="og:title" content="COVID-19 Hospital Admissions-Data.gov.sg
+      " />
+    <meta property="og:description" content="Data on COVID-19 Hospitalisations" />
+    <meta property="og:type" content="article" >
+    <meta property="og:url" content="covid-19-hospital-admissions.html" >
+    <meta property="og:image" content="../images/thumbnail.png" >
+    <meta property="og:site_name" content="Data.gov.sg" >
+    
+    <meta name="apple-mobile-web-app-title" content="Data.gov.sg">
+    
+    <meta name="msapplication-TileColor" content="#113355">
+    <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.html">
+    
+
+    
+    <link rel="manifest" href="../manifest.json">
+    
+    <link rel="mask-icon" href="../images/favicons/safari-pinned-tab.svg" color="#223344">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico" >
+    <link rel="icon" type="image/png" href="../images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../images/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../images/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="../images/favicons/favicon-194x194.png" sizes="194x194">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicons/apple-touch-icon-180x180.png">
+    
+
+    
+
+      
+    
+
+
+
+    
+    
+    
+    
+    
+    <script>
+      // Check if script is being ran from Iframe within data.gov.sg.
+      // This prevents dobule counting in Google Analytics tracking when page views are
+      // triggered twice due to embedding of iframe. This allows us to continue tracking
+      // users who are properly embedding the charts.
+      nodeName = window.frameElement ? window.frameElement.nodeName : 'default'
+      if (!(window.location.hostname.indexOf("data.gov.sg") > -1 && nodeName == "IFRAME")) {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-64941664-1', 'auto');
+        ga('send', 'pageview');
+
+        window.onload = function () {
+          //track resource downloads
+          document.body.addEventListener('click', function(event) {
+            var element = findElWithClass(event);
+            if (element !== null && typeof element.className == "string"){
+              var classes = element.className.split(' ');
+              for (var event_type in ga_events) {
+                if (classes.indexOf(event_type) > -1 ) {
+                  var eventCategory = ga_events[event_type].eventCategory;
+                  var eventAction = ga_events[event_type].eventAction;
+                  var eventLabel = element.getAttribute("data-ga") + ": " + window.location.href;
+
+                  if (event_type == "ga-dataset-download") {
+                    eventLabel = element.getAttribute("data-ga");
+                  }
+                  ga('send', 'event', eventCategory, eventAction, eventLabel);
+                }
+              }
+            }
+          });
+        };
+      }
+
+      function findElWithClass(el) {
+        if (el.target) {
+          el = el.target;
+          while (el) {
+            if (typeof el.className == "string"){
+              var classes = el.className.split(' ');
+              for (var event_type in ga_events) {
+                if (classes.indexOf(event_type) > -1 ) {
+                  return el;
+                }
+              }
+            }
+            el = el.parentNode;
+          }
+          return null;
+        }
+      }
+    </script>
+    
+    
+
+  </head>
+  
+
+  
+  <body>
+
+    
+    
+    <nav class="site-nav">
+      <div class="container">
+        <a href="../index.html">
+          <img class="site-logo"
+               src="../images/logo.svg"
+               alt="Data.gov.sg"
+               title="Data.gov.sg"/>
+        </a>
+        <a href="../index.html" class="site-title">Data.gov.sg</a>
+        <div class="flex-spacer"></div>
+
+        
+        <a class="site-link ga-nav-topic-dropdown" data-toggle="collapse" href=".html">Topics<span class="caret"></span></a>
+        
+
+
+        <a class="site-link ga-nav-blog" href='https://blog.data.gov.sg/'>Blog</a>
+        <a class="site-link ga-nav-developers" href='../developer.html'>Developers</a>
+        <a class="site-link ga-nav-request" href='https://github.com/datagovsg/datagovsg-datasets/issues/new?title=Dataset%20request:%20%3Cdataset%20title%3E'>Data Request</a>
+
+      </div>
+    </nav>
+    
+
+    
+    <div class="collapse topic-collapse">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Economy
+               href="../group/economy.html">
+              <img class="hover-on" src=../images/group_icons/active/economy.svg>
+              <img class="hover-off" src=../images/group_icons/inactive/economy.svg>
+              <h5 class="topic-title"><small>Economy</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Education
+               href="../group/education.html">
+              <img class="hover-on" src=../images/group_icons/active/education.svg>
+              <img class="hover-off" src=../images/group_icons/inactive/education.svg>
+              <h5 class="topic-title"><small>Education</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Environment
+               href="../group/environment.html">
+              <img class="hover-on" src=../images/group_icons/active/environment.svg>
+              <img class="hover-off" src=../images/group_icons/inactive/environment.svg>
+              <h5 class="topic-title"><small>Environment</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Finance
+               href="../group/finance.html">
+              <img class="hover-on" src=../images/group_icons/active/finance.svg>
+              <img class="hover-off" src=../images/group_icons/inactive/finance.svg>
+              <h5 class="topic-title"><small>Finance</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Health
+               href="../group/health.html">
+              <img class="hover-on" src=../images/group_icons/active/health.svg>
+              <img class="hover-off" src=../images/group_icons/inactive/health.svg>
+              <h5 class="topic-title"><small>Health</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Infrastructure
+               href="../group/infrastructure.html">
+              <img class="hover-on" src=../images/group_icons/active/infrastructure.svg>
+              <img class="hover-off" src=../images/group_icons/inactive/infrastructure.svg>
+              <h5 class="topic-title"><small>Infrastructure</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Society
+               href="../group/society.html">
+              <img class="hover-on" src=../images/group_icons/active/society.svg>
+              <img class="hover-off" src=../images/group_icons/inactive/society.svg>
+              <h5 class="topic-title"><small>Society</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Technology
+               href="../group/technology.html">
+              <img class="hover-on" src=../images/group_icons/active/technology.svg>
+              <img class="hover-off" src=../images/group_icons/inactive/technology.svg>
+              <h5 class="topic-title"><small>Technology</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Transport
+               href="../group/transport.html">
+              <img class="hover-on" src=../images/group_icons/active/transport.svg>
+              <img class="hover-off" src=../images/group_icons/inactive/transport.svg>
+              <h5 class="topic-title"><small>Transport</small></h5>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+    <header class="site-header "
+            style="background-image: url()">
+      
+      
+      
+      
+    </header>
+    
+
+
+    
+    
+    <main class="site-main">
+      
+
+<div class="header-div">
+  <div class="container">
+    <div class="package-title-section">
+      <h2 class="package-title">COVID-19 Hospital Admissions</h2>
+      <div class="package-title-buttons">
+      
+      
+        <a class="btn datagovsg-btn btn-right btn-orange ga-dataset-download"
+          data-ga="7362294c-abee-4943-9069-ebdfc7e6b66d"
+           role="button"
+           href="https://storage.data.gov.sg/covid-19-hospital-admissions/covid-19-hospital-admissions.zip">
+           <img class="button-icon" src='../images/icons/Download.svg'/>
+           Download
+        </a>
+      
+
+      
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dataset-resource-views">
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+<div class="resource-views-header">
+    <div class="resource-selector-header">
+      FILES IN THIS DATASET
+    </div>
+</div>
+
+<div class="resource-views-body">
+
+  
+  
+
+  <div class="resource-selector-container">
+    <ul class="resource-selector nav hidden-xs">
+      
+      <li class="active">
+        <a class="ga-dataset-resource-selector"
+           href="covid-19-hospital-admissions251e.html?resource_id=d6fa745b-4e22-4853-b3e7-53bdbf403c09">
+          New COVID-19 Hospital Admissions
+          <div>
+            <img class="format-icon"
+            src=../images/icons/file_type/CSV.svg/index.html>
+          </div>
+        </a>
+      </li>
+      
+      <li class="">
+        <a class="ga-dataset-resource-selector"
+           href="covid-19-hospital-admissions62c4.html?resource_id=d7765e35-c0d0-41ca-aa9c-9f6ccd457e29">
+          New COVID-19 ICU Admissions
+          <div>
+            <img class="format-icon"
+            src=../images/icons/file_type/CSV.svg/index.html>
+          </div>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+
+  <div class="resource-detail-container">
+    <div class="resource-detail container-fluid">
+
+
+        <div class="resource-controls-mobile">
+          
+          
+          Files in this dataset:
+          <select class="resource-control text-center resource-dropdown" onchange="window.location.href = this.value;">
+            
+            <option 
+                    selected=true
+                    
+                    value="/dataset/covid-19-hospital-admissions?resource_id=d6fa745b-4e22-4853-b3e7-53bdbf403c09">
+              New COVID-19 Hospital Admissions
+            </option>
+            
+            <option 
+                    value="/dataset/covid-19-hospital-admissions?resource_id=d7765e35-c0d0-41ca-aa9c-9f6ccd457e29">
+              New COVID-19 ICU Admissions
+            </option>
+            
+          </select>
+          
+
+          
+          
+          Views for this resource:
+          <select class="resource-control text-center view-select" onchange="window.location.href = this.value;">
+            
+            <option 
+                    selected=true
+                    
+                    value="/dataset/covid-19-hospital-admissions?view_id=8aad6df8-1c41-4916-898b-66b500984846&amp;resource_id=d6fa745b-4e22-4853-b3e7-53bdbf403c09">
+              Chart
+            </option>
+            
+            <option 
+                    value="/dataset/covid-19-hospital-admissions?view_id=9efbcd36-3f9b-499e-bea1-e0c8d635c1d1&amp;resource_id=d6fa745b-4e22-4853-b3e7-53bdbf403c09">
+              Table
+            </option>
+            
+          </select>
+          
+        </div>
+
+      
+        
+        
+        <div class="resource-controls">
+          <span>Views: </span>
+          
+            
+
+            
+
+            <a class="view-tab ga-dataset-resource-view-selector active chart" data-ga=Chart href=covid-19-hospital-admissions63ca.html?view_id=8aad6df8-1c41-4916-898b-66b500984846&amp;resource_id=d6fa745b-4e22-4853-b3e7-53bdbf403c09>
+              <div></div>
+              <img class="active" src="../images/icons/resource_view_selectors/active/chart.svg"/>
+              <img class="inactive" src="../images/icons/resource_view_selectors/inactive/chart.svg"/>
+              <img class="inactive hover" src="../images/icons/resource_view_selectors/hover/chart.svg"/>
+            </a>
+          
+            
+
+            
+
+            <a class="view-tab ga-dataset-resource-view-selector  table" data-ga=Table href=covid-19-hospital-admissions14fa.html?view_id=9efbcd36-3f9b-499e-bea1-e0c8d635c1d1&amp;resource_id=d6fa745b-4e22-4853-b3e7-53bdbf403c09>
+              <div></div>
+              <img class="inactive" src="../images/icons/resource_view_selectors/active/table.svg"/>
+              <img class="active" src="../images/icons/resource_view_selectors/inactive/table.svg"/>
+              <img class="inactive hover" src="../images/icons/resource_view_selectors/hover/table.svg"/>
+            </a>
+          
+
+          <div class="resource-embed-container">
+            
+            
+
+              
+                
+                
+
+                <button class="btn datagovsg-btn btn-right btn-blue desktop-only ga-dataset-data-api"
+                  data-ga=d6fa745b-4e22-4853-b3e7-53bdbf403c09
+                  data-toggle="modal"
+                  data-target="#dataAPIModal">
+                  <img class="button-icon" src='../images/icons/Data_API.svg'/>Data API
+                </button>
+
+                
+                <!-- <div class="modal" id="dataAPIModal"> -->
+                
+
+<div class="modal" id="dataAPIModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">View Embedding Instructions</h4>
+      </div>
+      <div class="modal-body">
+        <div class="accordion">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="accordion2" href="#collapse-endpoints">Endpoints &raquo;</a>
+            </div>
+            <div id="collapse-endpoints" class="in accordion-body collapse">
+              <div class="accordion-inner">
+                <p>The Data API can be accessed via the following actions of the CKAN action API.</p>
+                <table class="table-condensed table-striped table-bordered">
+                  <thead></thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Query</th>
+                      <td><code>https://data.gov.sg/api/action/datastore_search</code></td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="accordion2" href="#collapse-querying">Querying &raquo;</a>
+            </div>
+            <div id="collapse-querying" class="collapse accordion-body in">
+              <div class="accordion-inner">
+                <strong>Query example (first 5 results)</strong>
+                <p>
+                <code><a href="../api/action/datastore_search7472.json?resource_id=d6fa745b-4e22-4853-b3e7-53bdbf403c09&amp;limit=5" target="_blank">https://data.gov.sg/api/action/datastore_search?resource_id=d6fa745b-4e22-4853-b3e7-53bdbf403c09&limit=5</a></code>
+                </p>
+
+                <strong>Query example (results containing &#39;jones&#39;)</strong>
+                <p>
+                <code><a href="../api/action/datastore_search7a1d.json?resource_id=d6fa745b-4e22-4853-b3e7-53bdbf403c09&amp;q=jones"
+                    target="_blank">https://data.gov.sg/api/action/datastore_search?resource_id=d6fa745b-4e22-4853-b3e7-53bdbf403c09&q=jones</a></code>
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-group">
+            <div class="accordion-heading">
+             <a class="accordion-toggle" data-toggle="collapse" data-parent="accordion2" href="#collapse-javascript">Example: Javascript &raquo;</a>
+            </div>
+            <div id="collapse-javascript" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <p>A simple ajax (JSONP) request to the data API using jQuery.</p>
+                <pre>
+var data = {
+  resource_id: 'd6fa745b-4e22-4853-b3e7-53bdbf403c09', // the resource id
+  limit: 5, // get 5 results
+  q: 'jones' // query for 'jones'
+};
+$.ajax({
+  url: 'https://data.gov.sg/api/action/datastore_search',
+  data: data,
+  dataType: 'jsonp',
+  success: function(data) {
+    alert('Total results found: ' + data.result.total)
+  }
+});
+                </pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="accordion2" href="#collapse-python">Example: Python &raquo;</a>
+            </div>
+            <div id="collapse-python" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <pre>
+import urllib
+url = 'https://data.gov.sg/api/action/datastore_search?resource_id=d6fa745b-4e22-4853-b3e7-53bdbf403c09&amp;limit=5&amp;q=title:jones'
+fileobj = urllib.urlopen(url)
+print fileobj.read()
+                </pre>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                 <!-- </div> -->
+
+
+              
+            
+
+            
+            <button class="btn datagovsg-btn btn-right btn-blue ga-dataset-embed-chart"
+                    data-ga=d6fa745b-4e22-4853-b3e7-53bdbf403c09
+                    data-toggle="modal" data-target="#embedModal">
+              <img class="button-icon" src='../images/icons/Embed.svg'/>Embed Chart
+            </button>
+
+            
+            <div class="modal" id="embedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">View Embedding Instructions</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>Copy the following html into your webpage to embed this view</p>
+                    <code class="language-html well" data-lage="html">
+                      &lt;iframe
+                      width="600"
+                      height="400"
+                      src="https://data.gov.sg/dataset/covid-19-hospital-admissions/resource/d6fa745b-4e22-4853-b3e7-53bdbf403c09/view/8aad6df8-1c41-4916-898b-66b500984846"
+                      frameBorder="0"&gt;
+                      &lt;/iframe&gt;
+                    </code>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+        </div>
+
+        
+        
+        <div id="view-8aad6df8-1c41-4916-898b-66b500984846" class="resource-view chart-view">
+          
+            <iframe frameborder="0"
+                    src="covid-19-hospital-admissions/resource/d6fa745b-4e22-4853-b3e7-53bdbf403c09/view/8aad6df8-1c41-4916-898b-66b500984846.html" ></iframe>
+          
+        </div>
+
+        
+
+      
+
+      <div class="module-content">
+        <div class="resource-description">
+          
+        </div>
+        
+        <div class="resource-item-fields">
+          
+
+
+<span class="title">Columns</span>
+<div class='resource-fields'>
+  <div class="hidden-phone">
+    <table class="table table-condensed" >
+     
+      <col class="field-index">
+      <col class="field-name"/>
+      <col class="field-title"/>
+      <col class="field-type"/>
+      <col class="field-units"/>
+      <col class="field-desc"/>
+
+      <thead>
+        <tr>
+          <th class="field-index">No.</th>
+          <th class="field-name">Name</th>
+          <th class="field-title">Title</th>
+          <th class="field-type">Type</th>
+          <th class="field-units">Unit of Measure</th>
+          <th class="field-desc">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td class="field-index" width="10%">1</td>
+          <td>date</td>
+          <td>Date</td>
+          <td class="field-type">
+            Datetime (Date)
+            
+              <br>
+              &#34;YYYY-MM-DD&#34;
+            
+            
+          </td>
+          <td>-</td>
+          <td>
+            
+            -
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" width="10%">2</td>
+          <td>new_hospital_admissions</td>
+          <td>New Hospital Admissions</td>
+          <td class="field-type">
+            Numeric (General)
+            
+            
+          </td>
+          <td>Admissions</td>
+          <td>
+            
+            -
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="visible-phone">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="field-index text-center">No.</th>
+          <th>Column</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td class="field-index" >1</td>
+          <td>
+            <div><strong>Name:</strong> date </div>
+            <div><strong>Title:</strong> Date</div>
+            <div>
+              <strong>Type:</strong> 
+              <div class="field-type">Datetime (Date)
+              
+              <div>&#34;YYYY-MM-DD&#34;</div>
+              
+              
+            </div>
+            <div>
+              <strong>Unit of Measure:</strong> 
+              -
+            </div>
+            <div>
+              <strong>Description:</strong> 
+              
+              -
+            </div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="field-index" >2</td>
+          <td>
+            <div><strong>Name:</strong> new_hospital_admissions </div>
+            <div><strong>Title:</strong> New Hospital Admissions</div>
+            <div>
+              <strong>Type:</strong> 
+              <div class="field-type">Numeric (General)
+              
+              
+            </div>
+            <div>
+              <strong>Unit of Measure:</strong> 
+              Admissions
+            </div>
+            <div>
+              <strong>Description:</strong> 
+              
+              -
+            </div>
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+        </div>
+        
+        <div class="resource-fields-additional-info">
+          <span class="title">Additional Information</span>
+          <table class="table table-condensed" data-module="table-toggle-more">
+            <tbody>
+              <tr>
+                <th scope="row">Last updated</th>
+                <td>January 18, 2023</td>
+              </tr>
+              <tr>
+                <th scope="row">Created</th>
+                <td>March 1, 2022</td>
+              </tr>
+              <tr>
+                <th scope="row">Format</th>
+                <td>CSV</td>
+              </tr>
+              
+                <tr>
+                  <th scope="row">Coverage</th>
+                  <td>
+                    
+                      November 16, 2022 to January 15, 2023
+                    
+                  </td>
+                </tr>
+              
+              <tr>
+                <th scope="row">Licence</th>
+                
+                <td class="dataset-details"><a href="../open-data-licence.html" rel="dc:rights">Singapore Open Data Licence</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  
+</div>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">About this dataset</h2>
+      <article class="card">
+        <div class="dataset-description">
+          
+          <p>Data on COVID-19 Hospitalisations</p>
+        </div>
+        <div class="dataset-metadata">
+          
+
+<article class="metadata-card">
+  <table class="table">
+    <tbody>
+      
+
+      <tr>
+        <th scope="row">Managed By</th>
+        <td><a href="../dataset3fa7.html?organization=ministry-of-health">Ministry of Health</a></td>
+      </tr>
+
+      
+        <tr>
+          <th scope="row">Last Updated</th>
+          <td>January 18, 2023, 12:06 (SGT)</td>
+        </tr>
+      
+
+      
+        <tr>
+          <th scope="row">Created</th>
+          <td>March 1, 2022, 10:48 (SGT)</td>
+        </tr>
+      
+
+      
+        
+        <tr>
+          <th scope="row">Coverage</th>
+          
+            
+            <td>November 16, 2022 to January 15, 2023</td>
+            
+        </tr>
+      
+
+      
+        <tr>
+          <th scope="row">Frequency</th>
+          <td>Ad-hoc</td>
+        </tr>
+      
+
+      
+
+      
+        
+        
+          
+        
+        
+          <tr>
+            <th scope="row">Source(s)</th>
+            <td>Ministry of Health</td>
+          </tr>
+        
+      
+
+      
+
+
+      <tr>
+        <th scope="row">Licence</th>
+        <td><a href="../open-data-licence.html">Singapore Open Data Licence</a></td>
+      </tr>
+
+
+    </tbody>
+  </table>
+</article>
+        </div>
+      </article>
+  </div>
+</section>
+
+
+
+<section class="similar-datasets">
+  <div class="container">
+    <h2 class="section-title">Similar Datasets</h2>
+    <article class="card similar-datasets-card">
+      <div class="row-flex">
+        
+        
+        <div class="package-card">
+        <!-- <div class="col-sm-6 col-md-4"> -->
+          
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=436f0750-0f50-4c14-bafb-fd8e396b8c7c href="covid-19-case-in-singapore.html">
+      Covid-19 Case in Singapore
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=ministry-of-health
+      href="../dataset3fa7.html?organization=ministry-of-health">
+      Ministry of Health
+    </a>
+    
+    /
+    19 Aug 2022
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Details on the individual cases of confirmed Covid-19 in Singapore</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=../images/icons/file_type/CSV.svg/index.html>
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=../images/icons/file_type/KML.svg/index.html>
+  
+</div>
+
+</article>
+        </div>
+        
+        <div class="package-card">
+        <!-- <div class="col-sm-6 col-md-4"> -->
+          
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=7ce134bb-ca55-44bf-9138-9b9dd56b4dc2 href="phpc-under-national-covid-19-vaccine-program.html">
+      PHPCs under National COVID-19 Vaccine Program
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=ministry-of-health
+      href="../dataset3fa7.html?organization=ministry-of-health">
+      Ministry of Health
+    </a>
+    
+    /
+    01 Jan 2023
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Addresses of PHPCs under the National COVID-19 Vaccine Program</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=../images/icons/file_type/CSV.svg/index.html>
+  
+</div>
+
+</article>
+        </div>
+        
+        <div class="package-card">
+        <!-- <div class="col-sm-6 col-md-4"> -->
+          
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=5b7cff78-7c3e-47be-88f4-bde472b51241 href="covid-19-vaccination.html">
+      COVID-19 Vaccination
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=ministry-of-health
+      href="../dataset3fa7.html?organization=ministry-of-health">
+      Ministry of Health
+    </a>
+    
+    /
+    13 Jan 2023
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Data on COVID-19 Vaccination</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=../images/icons/file_type/CSV.svg/index.html>
+  
+</div>
+
+</article>
+        </div>
+        
+        <div class="package-card">
+        <!-- <div class="col-sm-6 col-md-4"> -->
+          
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=8f2de568-ea47-403b-aec8-1746c3dcb253 href="covid-19-statistics.html">
+      COVID-19 Statistics
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=ministry-of-health
+      href="../dataset3fa7.html?organization=ministry-of-health">
+      Ministry of Health
+    </a>
+    
+    /
+    19 Jan 2023
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">COVID-19 Statistics</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=../images/icons/file_type/CSV.svg/index.html>
+  
+</div>
+
+</article>
+        </div>
+        
+        <div class="package-card">
+        <!-- <div class="col-sm-6 col-md-4"> -->
+          
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=7ad3f05a-2208-40f4-ba43-578670cdb5f9 href="workplace-health-promotion-programme-survey.html">
+      Workplace Health Promotion Programme Survey
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=health-promotion-board
+      href="../dataset7e40.html?organization=health-promotion-board">
+      Health Promotion Board
+    </a>
+    
+    /
+    24 Sep 2018
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">The National Workplace Health Promotion Survey tracks the prevalence of workplace health promotion programmes (WHPP) among private companies.
+This survey has been discontinued since 2010. </p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=../images/icons/file_type/CSV.svg/index.html>
+  
+</div>
+
+</article>
+        </div>
+        
+        
+      </div>
+    </article>
+  </div>
+</section>
+
+    </main>
+    
+
+    
+
+    
+    <footer class="site-footer">
+      <div class='container'>
+      
+        <div class="row">
+          <div class="col-xs-12 col-md-7 footer-groups">
+            <div class="attribution-group text-left">
+              <h2>Built by</h2>
+              <br>
+                <a href="https://open.gov.sg/">Open Government Products</a><small class="text-muted"> - A Division of GovTech.</small><br><br>
+              <div><small>Last updated on January 24, 2023</small></div>
+              <small>&copy; 2020 Government of Singapore</small>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3 footer-groups">
+            <h2>Useful Links</h2>
+              <div class="footer-link">
+                <a class="ga-footer-about" href="../about.html">About Us</a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-privacy" href="../privacy-and-website-terms.html">Privacy &amp; Website Terms</a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-odl" href="../open-data-licence.html">Open Data Licence</a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-developer-guide" href="../developer.html">Developers</a>
+              </div>
+            </div>
+          <div class="col-xs-12 col-md-2 footer-groups">
+            <h2>Find Us</h2>
+              <div class="footer-link">
+                <a class="ga-footer-email" href="mailto:feedback@data.gov.sg?Subject=[Data.gov.sg] Feedback">
+                <img class="footer-site-icon"
+                  src="../images/email_white.png"
+                  title="Email"/>Email
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-facebook" href="https://www.facebook.com/opendatasg/">
+                  <img class="footer-site-icon"
+                  src="../images/fb_white.svg"
+                  title="Facebook"/>Facebook
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-twitter" href="https://twitter.com/datagovsg">
+                  <img class="footer-site-icon"
+                  src="../images/twitter_white.svg"
+                  title="Twitter"/>Twitter
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-medium" href="https://blog.data.gov.sg/">
+                <img class="footer-site-icon"
+                  src="../images/medium_white.svg"
+                  title="Medium"/>Medium
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-github" href="https://github.com/datagovsg">
+                <img class="footer-site-icon"
+                  src="../images/github_white.svg"
+                  title="Github"/>Github
+                </a>
+              </div>
+          </div>
+
+
+
+   <!--      <nav class="footer-links">
+
+        </nav>
+ -->
+      
+      </div>
+    </footer>
+    
+
+    
+    
+    <footer class="site-account text-right text-muted">
+      <div class="container">
+        <small>
+          
+          
+          <a href="../user/login.html">
+            Log In
+          </a>
+          
+        </small>
+      </div>
+    </footer>
+    
+
+    
+      
+    
+  <script>document.getElementsByTagName('html')[0].className += ' js';</script>
+<script type="text/javascript" src="../fanstatic/vendor/_version_2020-12-29T10_24_02/jquery.min.js"></script>
+<script type="text/javascript" src="../fanstatic/vendor/_version_2020-12-29T10_24_02/_bundle_jed.min.js%3bmoment-with-locales.js%3bselect2/select2.min.js"></script>
+<script type="text/javascript" src="../fanstatic/base/_version_2020-12-29T10_24_02/_bundle_plugins/jquery.inherit.min.js%3bplugins/jquery.proxy-all.min.js%3bplugins/jquery.url-helpers.min.js%3b/jquery.form-warning.min"></script>
+<script type="text/javascript" src="../fanstatic/datagovsg-lib/_version_2021-02-09T17_59_43/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="../fanstatic/datagovsg-js/_version_2023-01-16T16_56_32.50/snippets/ga-events.min.js"></script></body>
+  
+
+
+<!-- Mirrored from data.gov.sg/dataset/covid-19-hospital-admissions by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Jan 2023 04:41:26 GMT -->
+</html>
